@@ -1,0 +1,19 @@
+package xyz;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Cases {
+
+	RemoveFun r=new RemoveFun();
+	@Test
+	public void test() {
+		assertEquals("BCD",r.remove("ABCD"),0.0);
+		assertEquals("AACD",r.remove("CD"),0.0);
+		assertEquals("BACD",r.remove("BCD"),0.0);
+		assertEquals("BBAA",r.remove("BBAA"),0.0);
+		assertEquals("AABAA",r.remove("BAA"),0.0);
+	}
+
+}
